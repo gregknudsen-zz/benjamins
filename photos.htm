@@ -10,7 +10,7 @@
 <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/> -->
 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
-<link href="css/secondary.css" rel="stylesheet" type="text/css" />
+<link href="css/home.css" rel="stylesheet" type="text/css" />
 
 <style type="text/css">
 /*<!--
@@ -53,29 +53,16 @@ _gaq.push(["_trackPageview"]);
   </div>
   <div class="content"> &nbsp;<img src="images/logo.png" width="417" height="119" alt="Benjamin's Restaurant Logo">&nbsp;<br>
     <!-- InstanceBeginEditable name="content" -->
-    <div class="content_text">
-      <h1>Photos     &nbsp; </h1>
-      <p>&nbsp; </p>
 
-      <div class="fade">
-   <div><img src="http://via.placeholder.com/800x400&text=[ img 1 ]" /></div>
-  <div><img src="http://via.placeholder.com/800x400&text=[ img 2 ]" /></div>
-  <div><img src="http://via.placeholder.com/800x400&text=[ img 3 ]" /></div>
-    </div>
-
-      <p>&nbsp;</p>
-      <div align="center"><center></center>
-  <table width="100%" height="80%">
-
-    <tr>
-      <td align="center">&nbsp;</td>
-    </tr>
-  </table></div>
-    </div>
-    <!-- <script type="text/javascript">
-swfobject.registerObject("FlashID");
-</script> -->
-  <!-- InstanceEndEditable --></div>
+      <div class="my-slider">
+        <div>slide1</div>
+        <div>slide2</div>
+        <div>slide3</div>
+        <div>slide4</div>
+        <div>slide5</div>
+        <div>slide6</div>
+      </div>
+</div>
   <div class="footer">458 Philadelphia Street, Indiana, PA 15701
     <LABEL>-</LABEL>
   724-465-4446<br>
@@ -112,17 +99,21 @@ alt="drupal hit counter"></a></div></noscript>
 <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> -->
 <script type="text/javascript">
 $(document).ready(function() {
-  $(".fade").slick({
-    dots: true,
-    infinite: true,
-    speed: 700,
+  $(".my-slider").slick({
     autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1
+    dots: true,
+    responsive: [{
+        breakpoint: 500,
+        settings: {
+          dots: false,
+          arrows: false,
+          infinite: false,
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }]
+    });
   });
-});
 </script>
 
 </body>
