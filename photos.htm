@@ -56,12 +56,12 @@ _gaq.push(["_trackPageview"]);
     <!-- InstanceBeginEditable name="content" -->
 
       <div class="my-slider">
-        <div>slide1</div>
-        <div>slide2</div>
-        <div>slide3</div>
-        <div>slide4</div>
-        <div>slide5</div>
-        <div>slide6</div>
+        <div><img src="./images/benjamins-front-shot.jpg" /></div>
+        <div><img src="./images/latte.jpg" /></div>
+        <div><img src="./images/servers1.jpg" /></div>
+        <div><img src="./images/todd-toast.jpg" /></div>
+        <div><img src="./images/servers3.jpg" /></div>
+        <div><img src="./images/statue.jpg" /></div>
       </div>
 </div>
   <div class="footer">458 Philadelphia Street, Indiana, PA 15701
@@ -103,7 +103,14 @@ $(document).ready(function() {
   $(".my-slider").slick({
     // autoplay: true,
     dots: true,
+    // centerMode: true,
+    // centerPadding: '60px',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // variableWidth: true,
+    // adaptiveHeight: true,
     // fade: true,
+    // cssEase: 'linear',
     responsive: [{
         breakpoint: 500,
         settings: {
