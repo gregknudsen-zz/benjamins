@@ -28,6 +28,10 @@
   background: #1acc31;
 }
 
+.slick-track {
+	margin: 0 auto;
+}
+
 body {
 	background: #541119;
 	margin: 0;
@@ -113,7 +117,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	background-repeat: repeat-x;
 	background-position: center top;
 	margin-left: 0px;
-	text-align: left;
+	text-align: center;
 	vertical-align: top;
 }
 .hours {
